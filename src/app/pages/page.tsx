@@ -1,12 +1,11 @@
-import React from 'react';
-
-const Error404 = () => {
+import React from 'react'
+import Error404 from '../404Error/page'
+const Pages = () => {
   return (
     <div>
-      <h1>404 - Page Not Found</h1>
-      <p>The page you are looking for does not exist.</p>
+    <Error404 />
     </div>
-  );
-};
+  )
+}
 
-export default Error404;
+export default Pages
