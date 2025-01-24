@@ -71,6 +71,10 @@ const HomePage = () => {
                   />
                   </div>
                 </div>
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 3684ca6 (home)
 
             </div>
           </div>

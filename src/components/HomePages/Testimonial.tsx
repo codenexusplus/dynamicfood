@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Great_Vibes } from 'next/font/google'
 import { Button } from '@/components/ui/button'
 import { motion, AnimatePresence } from 'framer-motion'
+<<<<<<< HEAD
 import { client } from '@/sanity/lib/client'  // Import your Sanity client
 
 const VibeFont = Great_Vibes({ subsets: ['latin'], weight: ['400'] })
@@ -36,13 +37,56 @@ export default function TestimonialsSection() {
   // Auto-advance testimonials
   useEffect(() => {
     if (!isAutoPlaying || testimonials.length === 0) return
+=======
+
+const VibeFont = Great_Vibes({ subsets: ['latin'], weight: ['400'] })
+
+const testimonials = [
+  {
+    id: 1,
+    name: 'Alamin Hasan',
+    role: 'Food Specialist',
+    image: '/profile.png',
+    quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque diam pellentesque bibendum non dui volutpat fringilla bibendum.',
+    rating: 4,
+  },
+  {
+    id: 2,
+    name: 'Sarah Lee',
+    role: 'Marketing Expert',
+    image: '/profile2.png',
+    quote: 'Donec ut lorem eget arcu fringilla ultrices sit amet et ante. Sed malesuada mollis enim, a ullamcorper sem posuere eu.',
+    rating: 5,
+  },
+  {
+    id: 3,
+    name: 'John Doe',
+    role: 'Web Developer',
+    image: '/profile3.png',
+    quote: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+    rating: 3,
+  },
+]
+
+export default function TestimonialsSection() {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0)
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true)
+
+  // Auto-advance testimonials
+  useEffect(() => {
+    if (!isAutoPlaying) return
+>>>>>>> 3684ca6 (home)
 
     const timer = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length)
     }, 5000)
 
     return () => clearInterval(timer)
+<<<<<<< HEAD
   }, [isAutoPlaying, testimonials])
+=======
+  }, [isAutoPlaying])
+>>>>>>> 3684ca6 (home)
 
   const handleTestimonialChange = (index: number) => {
     setCurrentTestimonial(index)
@@ -62,6 +106,7 @@ export default function TestimonialsSection() {
         </div>
 
         <div className="bg-white/95 backdrop-blur-sm text-black p-8 md:p-12 rounded-2xl shadow-2xl relative">
+<<<<<<< HEAD
           {testimonials.length > 0 && (
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className="relative w-20 h-20 md:w-24 md:h-24">
@@ -74,6 +119,18 @@ export default function TestimonialsSection() {
               </div>
             </div>
           )}
+=======
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="relative w-20 h-20 md:w-24 md:h-24">
+              <Image
+                src={testimonials[currentTestimonial].image}
+                alt={testimonials[currentTestimonial].name}
+                fill
+                className="rounded-full border-4 border-white shadow-lg object-cover"
+              />
+            </div>
+          </div>
+>>>>>>> 3684ca6 (home)
 
           <div className="text-6xl md:text-7xl text-amber-500 opacity-30 absolute top-8 left-8">
             &quot;
@@ -143,4 +200,8 @@ export default function TestimonialsSection() {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-500 opacity-10 rounded-full translate-x-1/3 translate-y-1/3 blur-2xl" />
     </section>
   )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3684ca6 (home)

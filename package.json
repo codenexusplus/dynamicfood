@@ -18,7 +18,11 @@
     "class-variance-authority": "^0.7.1",
     "dotenv": "^16.4.7",
     "lucide-react": "^0.473.0",
+<<<<<<< HEAD
     "next": "15.1.4",
+=======
+    "next": "^15.1.6",
+>>>>>>> 3684ca6 (home)
     "next-sanity": "^9.8.35",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

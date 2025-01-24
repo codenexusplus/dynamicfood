@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 export default {
+=======
+const foodSchema = {
+>>>>>>> 3684ca6 (home)
   name: 'food',
   type: 'document',
   title: 'Food',
@@ -58,3 +62,8 @@ export default {
     },
   ],
 };
+<<<<<<< HEAD
+=======
+
+export default foodSchema;
+>>>>>>> 3684ca6 (home)

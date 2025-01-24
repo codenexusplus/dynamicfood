@@ -1,5 +1,9 @@
 import React from 'react'
+<<<<<<< HEAD
 import ErrorHero from './notfound'
+=======
+import ErrorHero from './Error404Hero'
+>>>>>>> 3684ca6 (home)
 import { Button } from '@/components/ui/button' 
 import Link from 'next/link'
 

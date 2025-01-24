@@ -9,11 +9,19 @@ const Shopdetail = () => {
       <div className="max-w-[1320px] h-[718px] mx-auto mt-[130px] flex flex-col md:flex-row ">
       {/* Left images */}
       <div className="flex flex-col md:ml-0 ml-[80px] gap-4 mr-4">
+<<<<<<< HEAD
   {[1, 2, 3, 4].map((img, index) => (
     <Image
       key={index}
       src={`/shop-detail/slide${img}.png`} // Updated to match your request
       alt={`Image ${img}`}
+=======
+  {[1, 2, 3, 4].map((image, index) => (
+    <Image
+      key={index}
+      src={`/shop-detail/slide${Image}.png`} // Updated to match your request
+      alt={`Image ${Image}`}
+>>>>>>> 3684ca6 (home)
       width={132} height={129}
       className=" md:w-[132px] md:h-[129px] w-[200px] h-[200px] rounded-[6px] border-2"
     />
